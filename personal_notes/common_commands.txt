@@ -1,0 +1,19 @@
+
+//Install angular cli. This have to be installed after install node js 
+npm install -g @angular/cli
+
+//Check version installed 
+//Version of angular https://angular.io/cli 
+ng --version
+
+//Sirve para un entorno de desarrollo
+ng serve 
+
+//Compila tu codigo para produccion.
+ng buid --prod 
+
+//Levanta un servidor en el puerto default 4200
+ng serve
+
+//Levanta un servidor con el puerto 4230
+ng serve --port 4230
