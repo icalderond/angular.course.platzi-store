@@ -1,16 +1,14 @@
-<input type="text" [(ngModel)]="title">
+Aqui se usa el databinding
 <br>
+<input type="text" [(ngModel)]="title">
 
 <!-- #region Uso de ngIf -->
-<br>
 <div *ngIf="title === 'nicolas'" >
     La variable es {{ title }}
 </div>
-<br>
 <div *ngIf="title === 'julian'" >
     La variable es {{ title }}
 </div>
-<br>
 <div *ngIf="title === 'camilo'" >
     La variable es {{ title }}
 </div>
@@ -25,6 +23,14 @@
 </div>
 <!-- #endregion Uso de ngSwitch -->
 
+<br>
+<!-- Aqui se usa el pipe personalizado exponential -->
+Aqui se usa el pipe personalizado exponential
+<br><input type="text" [(ngModel)]="power">
+{{ power | exponential }}
+
+<br>
+<br>
 <br>
 <button (click)="addItem()">Add Item</button>
 <br>
