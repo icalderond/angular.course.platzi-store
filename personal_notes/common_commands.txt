@@ -17,3 +17,6 @@ ng serve
 
 //Levanta un servidor con el puerto 4230
 ng serve --port 4230
+
+//Generar directiva llamada highlight para hacer modificaciones del elemento del DOM
+ng g d highlight
