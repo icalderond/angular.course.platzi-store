@@ -1,9 +1,29 @@
 <input type="text" [(ngModel)]="title">
 <br>
+
+<!-- #region Uso de ngIf -->
 <br>
 <div *ngIf="title === 'nicolas'" >
     La variable es {{ title }}
 </div>
+<br>
+<div *ngIf="title === 'julian'" >
+    La variable es {{ title }}
+</div>
+<br>
+<div *ngIf="title === 'camilo'" >
+    La variable es {{ title }}
+</div>
+<!-- #endregion Uso de ngIf -->
+
+<!-- #region Uso de ngSwitch -->
+<div [ngSwitch]="title">
+    <p *ngSwitchCase="'nicolas'">La variable es {{ title }}</p>
+    <p *ngSwitchCase="'julian'">La variable es {{ title }}</p>
+    <p *ngSwitchCase="'camilo'">La variable es {{ title }}</p>
+    <p *ngSwitchDefault>No hay elementos</p>
+</div>
+<!-- #endregion Uso de ngSwitch -->
 
 <br>
 <button (click)="addItem()">Add Item</button>
