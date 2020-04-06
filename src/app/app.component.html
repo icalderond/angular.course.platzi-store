@@ -40,9 +40,10 @@
     </li>
 </ul>
 
-<div *ngFor="let product of products">
-    <!-- {{ product.title }}
-    <img [src]="product.image" alt="">
-    {{ product.price }} --> 
-    <app-product (productAddCart)="productAddCart($event)" [product]="product"></app-product>
+<div class="product-grid">
+    <app-product 
+        *ngFor="let product of products" 
+        (productAddCart)="productAddCart($event)" 
+        [product]="product">
+    </app-product>
 </div>

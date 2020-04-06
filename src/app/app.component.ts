@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Product } from './product.model'
+import { Product } from './product.model';
 
 @Component({
   selector: 'app-root',
@@ -65,6 +65,5 @@ export class AppComponent {
   productAddCart(id: number){
     console.log('Product');
     console.log(id);
-    
   }
 }
