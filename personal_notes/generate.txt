@@ -1,0 +1,7 @@
+//angular.io/cli/generate
+
+//Generar componente con el nombre cart
+ng g c cart
+
+//Ayuda a saber errores
+ng lint 
