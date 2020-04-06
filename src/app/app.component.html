@@ -1,6 +1,5 @@
 <input type="text" [(ngModel)]="title">
 <br>
-<app-product></app-product>
 
 <!-- #region Uso de ngIf -->
 <br>
@@ -42,7 +41,8 @@
 </ul>
 
 <div *ngFor="let product of products">
-    {{ product.title }}
+    <!-- {{ product.title }}
     <img [src]="product.image" alt="">
-    {{ product.price }}
+    {{ product.price }} --> 
+    <app-product [product]="product"></app-product>
 </div>
