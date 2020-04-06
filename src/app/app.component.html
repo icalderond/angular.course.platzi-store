@@ -9,9 +9,13 @@
 <button (click)="addItem()">Add Item</button>
 <br>
 <ul>
+    <li *ngIf="items.length ===0">La lista esta vacia</li>
     <!-- iteracion por elemento
     let name of items -->
     <!-- iteracion por el index
     index as i -->
-    <li *ngFor="let name of items; index as i">{{ name }} {{ i }}</li>
+    <li *ngFor="let name of items; index as i">
+        {{ name }} {{ i }}
+        <button (click)="deleteItem(i)">Delete</button>
+    </li>
 </ul>
