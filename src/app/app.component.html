@@ -1,3 +1,14 @@
 <input type="text" [(ngModel)]="title">
 <br>
-{{ title }}
+<br>
+<div *ngIf="title === 'nicolas'" >
+    La variable es {{ title }}
+</div>
+<!-- <br>
+<div *ngIf="1 === 1" >
+    Esto es un div
+</div>
+<br>
+<div *ngIf="1 !== 1">
+    Esto es un div
+</div> -->
