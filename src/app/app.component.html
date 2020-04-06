@@ -44,5 +44,5 @@
     <!-- {{ product.title }}
     <img [src]="product.image" alt="">
     {{ product.price }} --> 
-    <app-product [product]="product"></app-product>
+    <app-product (productAddCart)="productAddCart($event)" [product]="product"></app-product>
 </div>
