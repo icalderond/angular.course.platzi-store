@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Product } from './product.model'
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,8 @@ export class AppComponent {
 
   items = ['nicolas', 'julian', 'rodrigo' ];
 
-  products = [ {
+  products: Product[] = [
+  {
     id: '1',
     image: 'assets/images/camiseta.png',
     title: 'Camiseta',
@@ -51,7 +53,7 @@ export class AppComponent {
     title: 'Stickers',
     price: 80000,
     description: 'bla bla bla bla bla'
-  }]
+  }];
 
   addItem(){
     this.items.push('nuevo item');
