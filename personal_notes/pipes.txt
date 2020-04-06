@@ -1,0 +1,6 @@
+angular.io/api/common/DatePipe
+
+date
+upercase
+currency
+slice

@@ -18,6 +18,8 @@ export class ProductComponent implements OnInit, DoCheck, OnDestroy{
     @Input() product: Product;
     @Output() productAddCart: EventEmitter<any> = new EventEmitter();
 
+    today = new Date();
+
     addCart(){
         console.log('Anadir al carrito');
         this.productAddCart.emit(this.product.id);
