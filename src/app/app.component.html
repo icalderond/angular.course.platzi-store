@@ -4,11 +4,14 @@
 <div *ngIf="title === 'nicolas'" >
     La variable es {{ title }}
 </div>
-<!-- <br>
-<div *ngIf="1 === 1" >
-    Esto es un div
-</div>
+
 <br>
-<div *ngIf="1 !== 1">
-    Esto es un div
-</div> -->
+<button (click)="addItem()">Add Item</button>
+<br>
+<ul>
+    <!-- iteracion por elemento
+    let name of items -->
+    <!-- iteracion por el index
+    index as i -->
+    <li *ngFor="let name of items; index as i">{{ name }} {{ i }}</li>
+</ul>
